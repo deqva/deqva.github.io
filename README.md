@@ -1,1 +1,3 @@
-# deqva.github.io-master
+blog de presentacion del proyecto
+
+(credits : https://taylantatli.github.io/Halve/halve-theme/)
