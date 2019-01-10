@@ -1,0 +1,41 @@
+---
+layout: compress
+published: true
+---
+
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body id="homepage">
+
+  <div class="block-left">
+    <div class="content">
+      <div class="main-info">
+        <h1>
+          {{ site.title }}
+        </h1>
+        <h2>
+          {{ site.description }}
+        </h2>
+        {% include social-links.html %}
+      </div>
+    </div>
+    <canvas></canvas>
+  </div>
+
+  <div class="block-right">
+    <a title="project" class="projects-menu-icon">
+      <span></span>
+    </a>
+    <span class="projects-link">Quienes somos</span>
+    <div class="content">
+      <div class="about-info">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+  {% include overlay.html %}
+  {% include scripts.html %}
+  <script src="{{ site.url }}/assets/js/canvas.js"></script>
+</body>
+</html>
